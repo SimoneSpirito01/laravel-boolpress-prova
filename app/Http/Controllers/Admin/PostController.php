@@ -31,6 +31,11 @@ class PostController extends Controller
      */
     public function index()
     {
+        $str = file_get_contents('../app/Http/Controllers/Admin/boolpress.json');
+        $json = json_decode($str, true);
+        $posts = $json[8]['data'];
+        var_dump($posts);
+        die;
         $posts = Post::all();
         return view('admin.posts.index', compact('posts'));
     }
