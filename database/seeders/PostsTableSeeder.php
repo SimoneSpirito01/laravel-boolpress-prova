@@ -4,7 +4,6 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use App\Post;
-use Faker\Generator as Faker;
 use Illuminate\Support\Str;
 
 class PostsTableSeeder extends Seeder
@@ -14,14 +13,18 @@ class PostsTableSeeder extends Seeder
      *
      * @return void
      */
-    public function run(Faker $faker)
+    public function run()
     {
-        for($i = 0; $i < 10; $i++) {
+        $str = file_get_contents('/Users/simonespirito/Downloads/Boolean/laravel-boolpress-1/boolpress.json');
+        $json = json_decode($str, true);
+        $posts = $json[8]['data'];
+
+        foreach ($posts as $key => $post) {
             $newPost = new Post();
-            $newPost->title = $faker->words(7, true);
-            $newPost->slug = Str::of($newPost->title)->slug('-');
-            $newPost->content = $faker->text();
-            $newPost->published = rand(0,1);
+            $newPost->title = $post['title'];
+            $newPost->slug = $post['slug'];
+            $newPost->content = $post['content'];
+            $newPost->published = $post['published'];
             $newPost->save();
         }
     }
