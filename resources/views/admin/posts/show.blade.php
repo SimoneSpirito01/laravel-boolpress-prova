@@ -11,7 +11,9 @@
                     <div class="card-body">
                         <div class="post">
                             @if ($post->image)
-                                <img src="{{ asset("storage/{$post->image}") }}" alt="{{ $post->title }}"
+                                {{-- <img src="{{ asset("storage/{$post->image}") }}" alt="{{ $post->title }}"
+                                    class="w-25"> --}}
+                                    <img src="{{$post->image}}" alt="{{ $post->title }}"
                                     class="w-25">
                             @endif
                             <p class="my-4">{!! $post->content !!}</p>

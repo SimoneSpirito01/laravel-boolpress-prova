@@ -54,14 +54,15 @@
                                 @enderror
                             </div>
                             <div class="form-group mb-3">
-                                <img src="" alt="" class="w-25 mb-3 my_image">
+                                <img src="{{ old('image')}}" alt="" class="w-25 mb-3 my_image">
                                 <label class="d-block" for="inputGroupFile02"
                                     aria-describedby="inputGroupFileAddon02">Choose image</label>
-                                <input type="file" id="inputGroupFile02" name="image"
+                                {{-- <input type="file" id="inputGroupFile02" name="image"
                                     class="@error('image') is-invalid @enderror" onchange="previewUpload(event)">
                                 @error('image')
                                     <div class="alert alert-danger">{{ $message }}</div>
-                                @enderror
+                                @enderror --}}
+                                <input type="text" placeholder="Insert image url" name="image">
                             </div>
                             <div class="form-group">
                                 @foreach ($tags as $tag)

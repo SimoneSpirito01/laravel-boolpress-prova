@@ -20,7 +20,7 @@ class PostController extends Controller
         'published' => 'sometimes|accepted',
         'category_id' => 'nullable|exists:categories,id',
         'tags' => 'nullable|exists:tags,id',
-        'image' => 'nullable|image|max:2048'
+        // 'image' => 'nullable|image|max:2048'
     ];
 
 
@@ -75,8 +75,9 @@ class PostController extends Controller
         }
 
         if(isset($data['image'])) {
-            $path = Storage::put('uploads', $data['image']);
-            $newPost->image = $path;
+            // $path = Storage::put('uploads', $data['image']);
+            // $newPost->image = $path;
+            $newPost->image = $data['image'];
         }
 
         $newPost->slug = $slug;
