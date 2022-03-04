@@ -10704,7 +10704,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "logo" }, [
-      _c("img", { attrs: { src: "/storage/img/sp.png", alt: "logo-sp" } }),
+      _c("img", { attrs: { src: "img/sp.png", alt: "logo-sp" } }),
     ])
   },
 ]
@@ -29056,7 +29056,7 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/simonespirito/Downloads/Boolean/laravel-boolpress/resources/js/guest/front.js */"./resources/js/guest/front.js");
+module.exports = __webpack_require__(/*! /Users/simonespirito/Downloads/Boolean/laravel-boolpress-1/resources/js/guest/front.js */"./resources/js/guest/front.js");
 
 
 /***/ })
