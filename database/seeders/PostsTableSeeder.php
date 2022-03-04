@@ -15,7 +15,7 @@ class PostsTableSeeder extends Seeder
      */
     public function run()
     {
-        $str = file_get_contents('../../boolpress.json');
+        $str = file_get_contents('boolpress.json');
         $json = json_decode($str, true);
         $posts = $json[8]['data'];
 
