@@ -1,0 +1,63 @@
+@font-face {
+  font-family: "Aktiv";
+  src: url(/fonts/AktivGrotesk-Light.ttf?98a3bc93fd244236b46ed91f8170edf7);
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "Aktiv";
+  src: url(/fonts/AktivGrotesk-Regular.ttf?f859d0ea0c2034c79db3ea62a4622606);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Aktiv";
+  src: url(/fonts/AktivGrotesk-Medium.ttf?9a7fa3d7a50fb3c55ecea670a9743965);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Aktiv";
+  src: url(/fonts/AktivGrotesk-Bold.ttf?802e32a5bd065d3f6ccfdbd917134d73);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Aktiv";
+  src: url(/fonts/AktivGrotesk-XBold.ttf?132fd821d138c66cae7d214bbc05223a);
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Nimbus Sans";
+  src: url(/fonts/Nimbus-Sans-D-OT-Light_32752.ttf?bfe34075d663b7371c776a0090bfa45e);
+}
+
+:root {
+  --nav-color: #777777;
+  --green: #a800a0;
+  --author-name: #333333;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Aktiv", sans-serif;
+}
+
+a {
+  display: inline-block;
+}
+
+img {
+  display: block;
+}
+

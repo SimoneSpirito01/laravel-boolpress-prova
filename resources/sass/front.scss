@@ -1,0 +1,62 @@
+
+// typhography
+
+@font-face {
+    font-family: "Aktiv";
+    src: url(./fonts/TTF/AktivGrotesk-Light.ttf);
+    font-weight: 200;
+}
+@font-face {
+    font-family: "Aktiv";
+    src: url(./fonts/TTF/AktivGrotesk-Regular.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Aktiv";
+    src: url(./fonts/TTF/AktivGrotesk-Medium.ttf);
+    font-weight: 600;
+}
+@font-face {
+    font-family: "Aktiv";
+    src: url(./fonts/TTF/AktivGrotesk-Bold.ttf);
+    font-weight: 700;
+}
+@font-face {
+    font-family: "Aktiv";
+    src: url(./fonts/TTF/AktivGrotesk-XBold.ttf);
+    font-weight: 800;
+}
+@font-face {
+    font-family: "Nimbus Sans";
+    src: url(./fonts/Nimbus-Sans-D-OT-Light_32752.ttf);
+}
+
+:root {
+    --nav-color: #777777;
+    --green: #a800a0;
+    --author-name: #333333;
+}
+
+// reset
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Aktiv", sans-serif;
+}
+
+a {
+    display: inline-block;
+}
+
+img {
+    display: block;
+}
