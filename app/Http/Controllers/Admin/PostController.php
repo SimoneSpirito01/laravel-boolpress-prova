@@ -31,11 +31,6 @@ class PostController extends Controller
      */
     public function index()
     {
-        $str = file_get_contents('../app/Http/Controllers/Admin/boolpress.json');
-        $json = json_decode($str, true);
-        $posts = $json[8]['data'];
-        var_dump($posts);
-        die;
         $posts = Post::all();
         return view('admin.posts.index', compact('posts'));
     }
@@ -154,9 +149,10 @@ class PostController extends Controller
         }
 
         if(isset($data['image'])) {
-            Storage::delete($post->image);
-            $path = Storage::put('uploads', $data['image']);
-            $post->image = $path;
+            // Storage::delete($post->image);
+            // $path = Storage::put('uploads', $data['image']);
+            // $post->image = $path;
+            $post->image = $data['image'];
         }
 
         $post->content = $data['content'];
@@ -184,7 +180,7 @@ class PostController extends Controller
         $post = Post::where('slug', $id)->first();
 
         if(isset($post->image)) {
-            Storage::delete($post->image);
+            // Storage::delete($post->image);
         }
 
         $post->delete();

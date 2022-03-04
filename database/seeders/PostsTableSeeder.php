@@ -15,7 +15,7 @@ class PostsTableSeeder extends Seeder
      */
     public function run()
     {
-        $str = file_get_contents('../database/seeders/boolpress.json');
+        $str = file_get_contents('database/seeders/boolpress.json');
         $json = json_decode($str, true);
         $posts = $json[8]['data'];
 
@@ -25,6 +25,12 @@ class PostsTableSeeder extends Seeder
             $newPost->slug = $post['slug'];
             $newPost->content = $post['content'];
             $newPost->published = $post['published'];
+            $newPost->image = $post['image'];
+            $newPost->author_id = $post['author_id'];
+            $newPost->category_id = $post['category_id'];
+            $newPost->created_at = $post['created_at'];
+            $newPost->updated_at = $post['updated_at'];
+
             $newPost->save();
         }
     }

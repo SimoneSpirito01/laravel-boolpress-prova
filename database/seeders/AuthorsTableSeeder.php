@@ -2,12 +2,10 @@
 
 namespace Database\Seeders;
 
-use App\Category;
+use App\Author;
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Str;
 
-
-class CategoriesTableSeeder extends Seeder
+class AuthorsTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -16,14 +14,14 @@ class CategoriesTableSeeder extends Seeder
      */
     public function run()
     {
-
         $str = file_get_contents('database/seeders/boolpress.json');
         $json = json_decode($str, true);
-        $posts = $json[3]['data'];
+        $posts = $json[2]['data'];
 
         foreach ($posts as $key => $post) {
-            $newPost = new Category();
-            $newPost->name = $post['name'];
+            $newPost = new Author();
+            $newPost->id = $post['id'];
+            $newPost->username = $post['username'];
             $newPost->slug = $post['slug'];
             $newPost->created_at = $post['created_at'];
             $newPost->updated_at = $post['updated_at'];
