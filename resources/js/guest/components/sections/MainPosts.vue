@@ -8,7 +8,7 @@
             <AuthorName :author="posts[0].author" />
             <div class="image">
                 <img
-                    :src="`/storage/${posts[0].image}`"
+                    :src="posts[0].image"
                     :alt="posts[0].title"
                 />
             </div>

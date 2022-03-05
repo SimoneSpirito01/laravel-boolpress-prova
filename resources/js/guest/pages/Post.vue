@@ -54,7 +54,7 @@
             </div>
             <div class="bottom">
                 <div class="image">
-                    <img :src="`/storage/${post.image}`" :alt="post.name" />
+                    <img :src="post.image" :alt="post.name" />
                 </div>
                 <div v-html="post.content" class="post-content"></div>
                 <div id="comments" ref="commentSection">

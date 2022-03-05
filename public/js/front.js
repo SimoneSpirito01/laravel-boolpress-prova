@@ -10665,9 +10665,7 @@ var render = function () {
         _vm._v(" "),
         _c("div", { staticClass: "right" }, [
           _c("div", { staticClass: "image" }, [
-            _c("img", {
-              attrs: { src: "/storage/" + _vm.post.image, alt: _vm.post.title },
-            }),
+            _c("img", { attrs: { src: _vm.post.image, alt: _vm.post.title } }),
           ]),
         ]),
       ]),
@@ -11047,10 +11045,7 @@ var render = function () {
           _vm._v(" "),
           _c("div", { staticClass: "image" }, [
             _c("img", {
-              attrs: {
-                src: "/storage/" + _vm.posts[0].image,
-                alt: _vm.posts[0].title,
-              },
+              attrs: { src: _vm.posts[0].image, alt: _vm.posts[0].title },
             }),
           ]),
         ],
@@ -11399,10 +11394,7 @@ var render = function () {
             _c("div", { staticClass: "bottom" }, [
               _c("div", { staticClass: "image" }, [
                 _c("img", {
-                  attrs: {
-                    src: "/storage/" + _vm.post.image,
-                    alt: _vm.post.name,
-                  },
+                  attrs: { src: _vm.post.image, alt: _vm.post.name },
                 }),
               ]),
               _vm._v(" "),

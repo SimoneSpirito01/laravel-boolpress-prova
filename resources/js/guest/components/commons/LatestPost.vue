@@ -21,7 +21,7 @@
             </div>
             <div class="right">
                 <div class="image">
-                    <img :src="`/storage/${post.image}`" :alt="post.title" />
+                    <img :src="post.image" :alt="post.title" />
                 </div>
             </div>
         </article>

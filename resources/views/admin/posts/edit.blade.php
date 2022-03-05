@@ -67,7 +67,7 @@
                                 @endif
                                 <label class="d-block" for="inputGroupFile02"
                                     aria-describedby="inputGroupFileAddon02">Choose image</label>
-                                <input type="text" placeholder="Insert image url" name="image">
+                                <input type="text" placeholder="Insert image url" name="image" value="{{$post->image}}">
                             </div>
                             <div class="form-group">
                                 @foreach ($tags as $tag)
