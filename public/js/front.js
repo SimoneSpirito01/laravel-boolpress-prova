@@ -10702,7 +10702,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "logo" }, [
-      _c("img", { attrs: { src: "img/sp.png", alt: "logo-sp" } }),
+      _c("img", { attrs: { src: "/img/sp.png", alt: "logo-sp" } }),
     ])
   },
 ]
