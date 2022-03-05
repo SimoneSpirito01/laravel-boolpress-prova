@@ -1,6 +1,6 @@
 <template>
     <div class="logo">
-        <img src="/img/sp.ico" alt="logo-sp">
+        <img src="/img/SP.png" alt="logo-sp">
     </div>
 </template>
 
